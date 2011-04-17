@@ -76,7 +76,20 @@
     <Compile Include="Domain\Services\QuizManager.cs" />
     <Compile Include="Domain\QuizEntry.cs" />
     <Compile Include="Domain\Services\QuizRunner.cs" />
+    <Compile Include="ViewModels\HighScoreViewModel.cs" />
+    <Compile Include="ViewModels\MainScreenViewModel.cs" />
+    <Compile Include="ViewModels\QuizOptionsViewModel.cs" />
+    <Compile Include="ViewModels\StartQuizViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\HighScoreView.xaml.cs">
+      <DependentUpon>HighScoreView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainScreenView.xaml.cs">
+      <DependentUpon>MainScreenView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuizOptionsView.xaml.cs">
+      <DependentUpon>QuizOptionsView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppBootstrapper.cs" />
@@ -107,6 +120,18 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\HighScoreView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainScreenView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QuizOptionsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ShellView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

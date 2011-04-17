@@ -66,6 +66,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Domain\Answer.cs" />
+    <Compile Include="Domain\Services\IQuizEntryRepository.cs" />
+    <Compile Include="Domain\Services\IQuizManager.cs" />
+    <Compile Include="Domain\Services\IQuizRunner.cs" />
+    <Compile Include="Domain\Level.cs" />
+    <Compile Include="Domain\Question.cs" />
+    <Compile Include="Domain\Quiz.cs" />
+    <Compile Include="Domain\Services\QuizManager.cs" />
+    <Compile Include="Domain\QuizEntry.cs" />
+    <Compile Include="Domain\Services\QuizRunner.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -101,9 +111,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Domain\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
